@@ -15,8 +15,8 @@ struct ArrayQueue {
   void add(T x) {
     // backing arrayが足りなくなったら拡張
     if (size + 1 > arr.length) {
-      resize();
       cout << "resize by add x:[" << x << "] size:[" << size << "]" << endl;
+      resize();
     }
     // 循環配列の起点(base)から見て末尾に当たる場所に値を格納
     // (p34の図を参照)
@@ -33,8 +33,8 @@ struct ArrayQueue {
     --size;
     // backing arrayのサイズが実際に要素数の3倍以上になったら縮小
     if (arr.length >= size * 3) {
-      resize();
       cout << "resize by remove x:[" << x << "] size:[" << size << "]" << endl;
+      resize();
     }
   }
 
