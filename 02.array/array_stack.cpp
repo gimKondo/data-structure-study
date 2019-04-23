@@ -1,8 +1,7 @@
-// ArrayStack
 #include "array.h"
 
 //------------------------------
-// Arrayを使ったStack
+// Arrayを使ったStack(実際にはリストインターフェイスなのだが…)
 //------------------------------
 struct ArrayStack {
   Array arr; // backing array
